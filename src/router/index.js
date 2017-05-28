@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
 import Schedule from '@/components/Schedule'
 
 Vue.use(Router)
@@ -11,8 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      redirect: { name: 'Schedule by week' }
     },
     {
       path: '/schedule',
