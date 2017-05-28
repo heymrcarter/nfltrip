@@ -6,11 +6,11 @@
       <nav class="navigation">
         <ul>
           <li>
-            <router-link to="/">Schedule</router-link>
+            <router-link to="/schedule">Schedule</router-link>
 
             <ul>
-              <li><router-link to="/">By week</router-link></li>
-              <li><router-link to="/">By team</router-link></li>
+              <li><router-link to="/schedule/by-week">By week</router-link></li>
+              <li><router-link to="/schedule/by-team">By team</router-link></li>
             </ul>
           </li>
           <li><router-link to="/">Trip Planner</router-link></li>
@@ -48,9 +48,10 @@ export default {
   float: left;
   width: 15%;
   height: 100vh;
-  box-shadow: 3px 0px 3px #000;
+  box-shadow: 3px 0px 10px -5px #999;
   z-index: 100;
   padding-top: 15px;
+  position: fixed;
 }
 
 .left-rail img {

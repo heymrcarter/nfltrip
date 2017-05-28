@@ -3,7 +3,7 @@
     <h1>NFL trip planner</h1>
     <p class="large">Helps you find the perfect game for a trip!</p>
     <div class="actions">
-      <router-link to="/" class="btn">View schedule</router-link>
+      <router-link to="/schedule" class="btn">View schedule</router-link>
       <router-link to="/" class="btn">Plan trip</router-link>
     </div>    
   </div>

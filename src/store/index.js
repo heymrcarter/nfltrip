@@ -170,7 +170,7 @@ const store = new Store({
         { away: 'HOU', home: 'LAR', date: new Date(2017, 10, 12, 13, 0)  },
         { away: 'DAL', home: 'ATL', date: new Date(2017, 10, 12, 17, 5)  },
         { away: 'NYG', home: 'SF',  date: new Date(2017, 10, 12, 17, 25) },
-        { away: 'NE',  home: 'DEN', date: new Date(2017, 10, 12, 20, 30) },      
+        { away: 'NE',  home: 'DEN', date: new Date(2017, 10, 12, 20, 30) },
         { away: 'MIA', home: 'CAR', date: new Date(2017, 10, 13, 20, 30) }
       ],
       11: [
@@ -220,7 +220,7 @@ const store = new Store({
         { away: 'CLE', home: 'LAC', date: new Date(2017, 11, 3, 17, 5)   },
         { away: 'LAR', home: 'ARI', date: new Date(2017, 11, 3, 17, 25)  },
         { away: 'NYG', home: 'OAK', date: new Date(2017, 11, 3, 17, 25)  },
-        { away: 'PHI', home: 'SEA', date: new Date(2017, 11, 3, 20, 30)  },      
+        { away: 'PHI', home: 'SEA', date: new Date(2017, 11, 3, 20, 30)  },
         { away: 'PIT', home: 'CIN', date: new Date(2017, 11, 4, 20, 30)  }
       ],
       14: [
@@ -237,7 +237,7 @@ const store = new Store({
         { away: 'NYJ', home: 'DEN', date: new Date(2017, 11, 10, 17, 5)  },
         { away: 'WAS', home: 'LAC', date: new Date(2017, 11, 10, 17, 25) },
         { away: 'PHI', home: 'LAR', date: new Date(2017, 11, 10, 17, 25) },
-        { away: 'DAL', home: 'NYG', date: new Date(2017, 11, 10, 17, 25) },      
+        { away: 'DAL', home: 'NYG', date: new Date(2017, 11, 10, 17, 25) },
         { away: 'BAL', home: 'PIT', date: new Date(2017, 11, 10, 20, 30) },
         { away: 'NE',  home: 'MIA', date: new Date(2017, 11, 11, 20, 30) }
       ],
@@ -255,7 +255,7 @@ const store = new Store({
         { away: 'ARI', home: 'WAS', date: new Date(2017, 11, 17, 13, 0)  },
         { away: 'LAR', home: 'SEA', date: new Date(2017, 11, 17, 17, 5)  },
         { away: 'NE',  home: 'PIT', date: new Date(2017, 11, 17, 17, 25) },
-        { away: 'TEN', home: 'SF',  date: new Date(2017, 11, 17, 17, 25) },      
+        { away: 'TEN', home: 'SF',  date: new Date(2017, 11, 17, 17, 25) },
         { away: 'DAL', home: 'OAK', date: new Date(2017, 11, 17, 20, 30) },
         { away: 'ATL', home: 'TB',  date: new Date(2017, 11, 18, 20, 30) }
       ],
@@ -273,7 +273,7 @@ const store = new Store({
         { away: 'DEN', home: 'WAS', date: new Date(2017, 11, 24, 13, 0)  },
         { away: 'JAX', home: 'SF',  date: new Date(2017, 11, 24, 14, 5)  },
         { away: 'NYG', home: 'ARI', date: new Date(2017, 11, 24, 16, 25) },
-        { away: 'SEA', home: 'DAL', date: new Date(2017, 11, 24, 16, 25) },      
+        { away: 'SEA', home: 'DAL', date: new Date(2017, 11, 24, 16, 25) },
         { away: 'PIT', home: 'HOU', date: new Date(2017, 11, 25, 16, 30) },
         { away: 'OAK', home: 'PHI', date: new Date(2017, 11, 25, 20, 30) }
       ],
@@ -291,7 +291,7 @@ const store = new Store({
         { away: 'NO',  home: 'TB',  date: new Date(2017, 11, 31, 13, 0)  },
         { away: 'JAX', home: 'TEN', date: new Date(2017, 11, 31, 13, 0)  },
         { away: 'KC',  home: 'DEN', date: new Date(2017, 11, 31, 16, 25) },
-        { away: 'OAK', home: 'LAC', date: new Date(2017, 11, 31, 16, 25) },      
+        { away: 'OAK', home: 'LAC', date: new Date(2017, 11, 31, 16, 25) },
         { away: 'SF',  home: 'LAR', date: new Date(2017, 11, 31, 16, 25) },
         { away: 'ARI', home: 'SEA', date: new Date(2017, 11, 31, 16, 25) }
       ]
@@ -301,3 +301,5 @@ const store = new Store({
     schedule: state => state.schedule
   }
 })
+
+export default store
