@@ -18,7 +18,7 @@
 
       <ul class="matchups">
         <li v-for="matchup in teamSchedule">
-          <matchup :home="matchup.home" :away="matchup.away" :date="matchup.date"></matchup>
+          <matchup :home="matchup.home" :away="matchup.away" :date="matchup.date" :team="currentTeam"></matchup>
         </li>
       </ul>
     </section>

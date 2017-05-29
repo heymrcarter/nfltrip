@@ -1,7 +1,7 @@
 <template>
   <div class="matchup">
-    <p class="away">{{ formatTeam(away) }}</p>
-    <p class="home">{{ formatTeam(home) }}</p>
+    <p class="away" :class="{ highlight: shouldHighlight(away) }">{{ formatTeam(away) }}</p>
+    <p class="home" :class="{ highlight: shouldHighlight(home) }">{{ formatTeam(home) }}</p>
     <p class="date">{{ formattedDate }}</p>
   </div>
 </template>
@@ -12,7 +12,7 @@ import { mapGetters } from 'vuex'
 
 export default {
   name: 'matchup',
-  props: ['home', 'away', 'date'],
+  props: ['home', 'away', 'date', 'team'],
   computed: {
     ...mapGetters(['teams']),
     formattedDate () {
@@ -27,6 +27,9 @@ export default {
       }
 
       return `${this.teams[team].team}`
+    },
+    shouldHighlight (team) {
+      return this.team === team
     }
   }
 }
@@ -35,5 +38,9 @@ export default {
 <style scoped>
   .matchup {
     padding: 10px;
+  }
+
+  .highlight {
+    font-weight: bold;
   }
 </style>
