@@ -15,6 +15,7 @@
         <label><input type="checkbox" v-model="closeToLouisville"/> Close to Louisville</label>
         <label><input type="checkbox" v-model="avoidCold"/> Avoid cold</label>
         <label><input type="checkbox" v-model="avoidChiefs"/> Avoid Chiefs home games</label>
+        <label><input type="checkbox" v-model="filterOnCity"/> <input type="text" placeholder="City" v-model="desiredCity"></label>
       </div>
 
       <ul class="matchups">
@@ -35,6 +36,7 @@ import closeToLouisville from '../rulesets/close-to-louisville'
 import avoidCold from '../rulesets/avoid-cold'
 import avoidChiefs from '../rulesets/avoid-chiefs'
 import moment from 'moment'
+import preferCity from '../rulesets/prefer-city'
 
 export default {
   name: 'trip-planner',
@@ -46,7 +48,9 @@ export default {
       weeks: createWeeks(),
       closeToLouisville: false,
       avoidCold: false,
-      avoidChiefs: false
+      avoidChiefs: false,
+      filterOnCity: false,
+      desiredCity: undefined
     }
   },
   watch: {
@@ -60,6 +64,12 @@ export default {
       this.updateMatchups()
     },
     avoidChiefs: function (value) {
+      this.updateMatchups()
+    },
+    filterOnCity: function () {
+      this.updateMatchups()
+    },
+    desiredCity: function () {
       this.updateMatchups()
     }
   },
@@ -83,6 +93,10 @@ export default {
         if (chiefsAtHome) {
           matchups = []
         }
+      }
+
+      if (this.filterOnCity && this.desiredCity !== undefined) {
+        matchups = matchups.filter(matchup => preferCity(matchup, this.desiredCity))
       }
 
       this.matchups = matchups
@@ -121,5 +135,9 @@ function createWeeks () {
 
   label {
     display: block;
+  }
+
+  input[type="text"] {
+    padding: 5px;
   }
 </style>
