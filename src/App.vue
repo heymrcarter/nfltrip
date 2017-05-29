@@ -13,7 +13,7 @@
               <li><router-link to="/schedule/by-team">By team</router-link></li>
             </ul>
           </li>
-          <li><router-link to="/">Trip Planner</router-link></li>
+          <li><router-link to="/trip-planner">Trip Planner</router-link></li>
         </ul>
       </nav>
     </aside>

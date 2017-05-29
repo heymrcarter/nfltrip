@@ -91,10 +91,4 @@ function createWeeks () {
 .form-group {
   margin-left: 10px;
 }
-
-.matchups {
-   list-style: none;
-   margin-top: 20px;
-}
-.matchups li { border-bottom: 1px solid #013368; }
 </style>
