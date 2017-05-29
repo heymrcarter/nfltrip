@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Schedule from '@/components/Schedule'
+import WeeklySchedule from '@/components/WeeklySchedule'
+import TeamSchedule from '@/components/TeamSchedule'
 
 Vue.use(Router)
 
@@ -14,18 +15,18 @@ export default new Router({
     },
     {
       path: '/schedule',
-      name: 'Schedule',
+      name: 'WeeklySchedule',
       redirect: { name: 'Schedule by week' }
     },
     {
       path: '/schedule/by-week',
       name: 'Schedule by week',
-      component: Schedule
+      component: WeeklySchedule
     },
     {
       path: '/schedule/by-team',
       name: 'Schedule by team',
-      component: Schedule
+      component: TeamSchedule
     }
   ]
 })

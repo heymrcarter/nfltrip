@@ -295,10 +295,141 @@ const store = new Store({
         { away: 'SF',  home: 'LAR', date: new Date(2017, 11, 31, 16, 25) },
         { away: 'ARI', home: 'SEA', date: new Date(2017, 11, 31, 16, 25) }
       ]
+    },
+    teams: {
+      'ARI': {
+        team: 'Arizona',
+        nickname: 'Cardinals'
+      },
+      'ATL': {
+        team: 'Atlanta',
+        nickname: 'Falcons'
+      },
+      'BAL': {
+        team: 'Baltimore',
+        nickname: 'Ravens'
+      },
+      'BUF': {
+        team: 'Buffalo',
+        nickname: 'Bills'
+      },
+      'CAR': {
+        team: 'Carolina',
+        nickname: 'Panthers'
+      },
+      'CHI': {
+        team: 'Chicago',
+        nickname: 'Bears'
+      },
+      'CIN': {
+        team: 'Cincinnati',
+        nickname: 'Bengals'
+      },
+      'CLE': {
+        team: 'Cleveland',
+        nickname: 'Browns'
+      },
+      'DAL': {
+        team: 'Dallas',
+        nickname: 'Cowboys'
+      },
+      'DEN': {
+        team: 'Denver',
+        nickname: 'Broncos'
+      },
+      'DET': {
+        team: 'Detroit',
+        nickname: 'Lions'
+      },
+      'GB': {
+        team: 'Green Bay',
+        nickname: 'Packers'
+      },
+      'HOU': {
+        team: 'Houston',
+        nickname: 'Texans'
+      },
+      'IND': {
+        team: 'Indianapolis',
+        nickname: 'Colts'
+      },
+      'JAX': {
+        team: 'Jacksonville',
+        nickname: 'Jaguars'
+      },
+      'KC': {
+        team: 'Kansas City',
+        nickname: 'Chiefs'
+      },
+      'LAC': {
+        team: 'Los Angeles',
+        nickname: 'Chargers'
+      },
+      'LAR': {
+        team: 'Los Angeles',
+        nickname: 'Rams'
+      },
+      'MIA': {
+        team: 'Miami',
+        nickname: 'Dolphins'
+      },
+      'MIN': {
+        team: 'Minnesota',
+        nickname: 'Vikings'
+      },
+      'NE': {
+        team: 'New Engiand',
+        nickname: 'Patriots'
+      },
+      'NO': {
+        team: 'New Orleans',
+        nickname: 'Saints'
+      },
+      'NYG': {
+        team: 'New York',
+        nickname: 'Giants'
+      },
+      'NYJ': {
+        team: 'New York',
+        nickname: 'Jets'
+      },
+      'OAK': {
+        team: 'Oakland',
+        nickname: 'Raiders'
+      },
+      'PHI': {
+        team: 'Philadelphia',
+        nickname: 'Eagles'
+      },
+      'PIT': {
+        team: 'Pittsburgh',
+        nickname: 'Steelers'
+      },
+      'SF': {
+        team: 'San Francisco',
+        nickname: '49ers'
+      },
+      'SEA': {
+        team: 'Seattle',
+        nickname: 'Seahawks'
+      },
+      'TB': {
+        team: 'Tampa Bay',
+        nickname: 'Buccaneers'
+      },
+      'TEN': {
+        team: 'Tennessee',
+        nickname: 'Titans'
+      },
+      'WAS': {
+        team: 'Washington',
+        nickname: 'Redskins'
+      }
     }
   },
   getters: {
-    schedule: state => state.schedule
+    schedule: state => state.schedule,
+    teams: state => state.teams
   }
 })
 
