@@ -12,26 +12,26 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: { name: 'Schedule by week' }
+      redirect: { name: 'ScheduleByWeek' }
     },
     {
       path: '/schedule',
       name: 'WeeklySchedule',
-      redirect: { name: 'Schedule by week' }
+      redirect: { name: 'ScheduleByWeek' }
     },
     {
       path: '/schedule/by-week',
-      name: 'Schedule by week',
+      name: 'ScheduleByWeek',
       component: WeeklySchedule
     },
     {
       path: '/schedule/by-team',
-      name: 'Schedule by team',
+      name: 'ScheduleByTeam',
       component: TeamSchedule
     },
     {
       path: '/trip-planner',
-      name: 'Trip planner',
+      name: 'TripPlanner',
       component: TripPlanner
     }
   ]

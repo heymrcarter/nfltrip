@@ -6,14 +6,14 @@
       <nav class="navigation">
         <ul>
           <li>
-            <router-link to="/schedule">Schedule</router-link>
+            <router-link :to="{name: 'WeeklySchedule'}">Schedule</router-link>
 
             <ul>
-              <li><router-link to="/schedule/by-week">By week</router-link></li>
-              <li><router-link to="/schedule/by-team">By team</router-link></li>
+              <li><router-link :to="{name: 'ScheduleByWeek'}">By week</router-link></li>
+              <li><router-link :to="{name: 'ScheduleByTeam'}">By team</router-link></li>
             </ul>
           </li>
-          <li><router-link to="/trip-planner">Trip Planner</router-link></li>
+          <li><router-link :to="{name: 'TripPlanner'}">Trip Planner</router-link></li>
         </ul>
       </nav>
     </aside>
