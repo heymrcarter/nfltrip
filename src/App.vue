@@ -5,8 +5,7 @@
 
       <nav class="navigation">
         <ul>
-          <li>
-            <router-link :to="{name: 'WeeklySchedule'}">Schedule</router-link>
+          <li>Schedule
 
             <ul>
               <li><router-link :to="{name: 'ScheduleByWeek'}">By week</router-link></li>
@@ -60,10 +59,31 @@ export default {
 
 .left-rail .navigation {
   text-align: center;
+  margin-top: 10px;
 }
 
 .left-rail .navigation ul { 
   list-style: none;
+}
+
+.left-rail .navigation ul li {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.left-rail .navigation ul li ul {
+  margin-top: 10px;
+}
+
+.left-rail .navigation a {
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 3px 0;
+}
+
+.left-rail .navigation a.active {
+  border-bottom: 2px solid #013368;  
 }
 
 main {
