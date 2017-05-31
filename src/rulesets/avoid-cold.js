@@ -1,4 +1,4 @@
-import moment from 'moment'
+import fecha from 'fecha'
 
 const octTeams = ['GB', 'CHI', 'BUF', 'NYG', 'NYJ', 'NE', 'PHI']
 const novTeams = octTeams.concat(['CLE', 'PIT', 'CIN', 'KC', 'DEN'])
@@ -10,7 +10,7 @@ const map = {
 }
 
 export default function avoidCold (matchup) {
-  const month = moment(matchup.date).format('M')
+  const month = fecha.format(matchup.date, 'M')
 
   if (Object.keys(map).includes(month)) {
     if (map[month].includes(matchup.home)) {

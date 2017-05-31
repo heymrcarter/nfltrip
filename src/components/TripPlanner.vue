@@ -35,7 +35,7 @@ import { mapGetters } from 'vuex'
 import closeToLouisville from '../rulesets/close-to-louisville'
 import avoidCold from '../rulesets/avoid-cold'
 import avoidChiefs from '../rulesets/avoid-chiefs'
-import moment from 'moment'
+import fecha from 'fecha'
 import preferCity from '../rulesets/prefer-city'
 
 export default {
@@ -104,7 +104,7 @@ export default {
     chiefsOpponent () {
       const matchup = this.schedule[this.currentWeek].find(m => m.home === 'KC')
       const opponent = this.teams[matchup.away].team
-      const date = moment(matchup.date).format('dddd, MMMM Do YYYY, h:mm a')
+      const date = fecha.format(matchup.date, 'dddd, MMMM Do YYYY, h:mm a')
       return `${opponent} on ${date}`
     }
   },

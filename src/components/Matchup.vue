@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import moment from 'moment'
+import fecha from 'fecha'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -16,8 +16,7 @@ export default {
   computed: {
     ...mapGetters(['teams']),
     formattedDate () {
-      const date = moment(this.date)
-      return date.format('dddd, MMMM Do YYYY, h:mm a')
+      return fecha.format(this.date, 'dddd, MMMM Do YYYY, h:mm a')
     }
   },
   methods: {
