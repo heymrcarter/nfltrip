@@ -1,21 +1,15 @@
 <template>
   <div id="app">
-    <aside class="left-rail">
-      <img src="./assets/nfl-logo.jpg" />
+    <header>
+      <img src="./assets/nfl-logo.png" />
 
       <nav class="navigation">
         <ul>
-          <li>Schedule
-
-            <ul>
-              <li><router-link :to="{name: 'ScheduleByWeek'}">By week</router-link></li>
-              <li><router-link :to="{name: 'ScheduleByTeam'}">By team</router-link></li>
-            </ul>
-          </li>
+          <li><router-link :to="{name: 'WeeklySchedule'}">Schedule</router-link></li>
           <li><router-link :to="{name: 'TripPlanner'}">Trip Planner</router-link></li>
         </ul>
       </nav>
-    </aside>
+    </header>
     <main>
       <router-view></router-view>
     </main>
@@ -43,55 +37,51 @@ export default {
   clear: both;
 }
 
-.left-rail {
-  float: left;
-  width: 15%;
-  height: 100vh;
-  box-shadow: 3px 0px 10px -5px #999;
-  z-index: 100;
-  padding-top: 15px;
-  position: fixed;
-}
-
-.left-rail img {
+header {
   width: 100%;
+  height: 60px;
+  box-shadow: 3px 0px 5px 0px #999;
+  z-index: 100;
+  position: fixed;
+  background-color: #fff;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
 }
 
-.left-rail .navigation {
-  text-align: center;
-  margin-top: 10px;
+header img {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-.left-rail .navigation ul { 
+header .navigation {
+  flex: 1;
+  margin-top: 3px;
+}
+
+header .navigation ul { 
   list-style: none;
 }
 
-.left-rail .navigation ul li {
-  display: block;
+header .navigation ul li {
+  display: inline-block;
   margin-bottom: 10px;
-  color: #777;
+  margin-right: 5px;
 }
 
-.left-rail .navigation ul li ul {
-  margin-top: 10px;
-}
-
-.left-rail .navigation a {
+header .navigation a {
   color: #2c3e50;
   text-decoration: none;
-  padding: 3px 0;
+  padding: 3px;
 }
 
-.left-rail .navigation a.active {
+header .navigation a.active {
   border-bottom: 2px solid #013368;  
 }
 
-main {
-  float: right;
-  width: 85%;
-  height: 100vh;
+main {  
   background-color: #f9f9f9;
-  padding: 15px 25px;
+  padding: 85px 25px 15px 25px;
   box-sizing: border-box;
   z-index: 90;
 }

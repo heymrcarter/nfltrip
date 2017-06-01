@@ -11,3 +11,4 @@
    margin-top: 20px;
 }
 .matchups li { border-bottom: 1px solid #013368; }
+.matchups li:last-child { border-bottom: none; }
