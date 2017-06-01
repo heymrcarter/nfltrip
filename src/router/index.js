@@ -7,7 +7,6 @@ import TripPlanner from '@/components/TripPlanner'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
   linkActiveClass: 'active',
   routes: [
     {
