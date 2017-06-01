@@ -17,8 +17,16 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
-  name: 'app'
+  name: 'app',
+  methods: {
+    ...mapActions(['loadFavorites'])
+  },
+  mounted () {
+    this.loadFavorites()
+  }
 }
 </script>
 

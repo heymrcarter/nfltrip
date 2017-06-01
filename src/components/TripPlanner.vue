@@ -31,11 +31,10 @@
 
 <script>
 import Matchup from './Matchup'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import closeToLouisville from '../rulesets/close-to-louisville'
 import avoidCold from '../rulesets/avoid-cold'
 import avoidChiefs from '../rulesets/avoid-chiefs'
-import fecha from 'fecha'
 import preferCity from '../rulesets/prefer-city'
 
 export default {
@@ -77,6 +76,7 @@ export default {
     ...mapGetters(['schedule', 'teams'])
   },
   methods: {
+    ...mapActions(['loadFavorites']),
     updateMatchups () {
       let matchups = this.schedule[this.currentWeek]
 
@@ -104,8 +104,7 @@ export default {
     chiefsOpponent () {
       const matchup = this.schedule[this.currentWeek].find(m => m.home === 'KC')
       const opponent = this.teams[matchup.away].team
-      const date = fecha.format(matchup.date, 'dddd, MMMM Do YYYY, h:mm a')
-      return `${opponent} on ${date}`
+      return `${opponent} on ${matchup.date}`
     }
   },
   mounted () {
