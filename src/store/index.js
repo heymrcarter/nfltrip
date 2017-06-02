@@ -379,7 +379,7 @@ const store = new Store({
         nickname: 'Vikings'
       },
       'NE': {
-        team: 'New Engiand',
+        team: 'New England',
         nickname: 'Patriots'
       },
       'NO': {

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import WeeklySchedule from '@/components/WeeklySchedule'
 import TeamSchedule from '@/components/TeamSchedule'
 import TripPlanner from '@/components/TripPlanner'
+import Favorites from '@/components/Favorites'
 
 Vue.use(Router)
 
@@ -32,6 +33,11 @@ export default new Router({
       path: '/trip-planner',
       name: 'TripPlanner',
       component: TripPlanner
+    },
+    {
+      path: '/favorites',
+      name: 'Favorites',
+      component: Favorites
     }
   ]
 })

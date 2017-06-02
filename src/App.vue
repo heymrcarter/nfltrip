@@ -7,6 +7,7 @@
         <ul>
           <li><router-link :to="{name: 'WeeklySchedule'}">Schedule</router-link></li>
           <li><router-link :to="{name: 'TripPlanner'}">Trip Planner</router-link></li>
+          <li><router-link :to="{name: 'Favorites'}">Favorites</router-link></li>
         </ul>
       </nav>
     </header>
