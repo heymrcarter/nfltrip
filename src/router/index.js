@@ -4,6 +4,7 @@ import WeeklySchedule from '@/components/WeeklySchedule'
 import TeamSchedule from '@/components/TeamSchedule'
 import TripPlanner from '@/components/TripPlanner'
 import Favorites from '@/components/Favorites'
+import Home from '@/components/Home'
 
 Vue.use(Router)
 
@@ -12,7 +13,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: { name: 'ScheduleByWeek' }
+      component: Home
     },
     {
       path: '/schedule',
