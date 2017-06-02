@@ -5,6 +5,7 @@ import TeamSchedule from '@/components/TeamSchedule'
 import TripPlanner from '@/components/TripPlanner'
 import Favorites from '@/components/Favorites'
 import Home from '@/components/Home'
+import Shared from '@/components/Shared'
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ export default new Router({
       path: '/favorites',
       name: 'Favorites',
       component: Favorites
+    },
+    {
+      path: '/shared/:faveData',
+      name: 'Shared',
+      component: Shared
     }
   ]
 })
