@@ -59,7 +59,7 @@ export default {
     flex-direction: row;
     align-items: center;
   }
-  
+
   .matchup .details {
     flex: 1;
   }

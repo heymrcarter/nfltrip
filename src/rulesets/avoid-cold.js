@@ -10,7 +10,8 @@ const map = {
 }
 
 export default function avoidCold (matchup) {
-  const month = fecha.format(matchup.date, 'M')
+  const date = fecha.parse(matchup.date, 'dddd, MMMM Do YYYY, h:mm a')
+  const month = fecha.format(date, 'M')
 
   if (Object.keys(map).includes(month)) {
     if (map[month].includes(matchup.home)) {

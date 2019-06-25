@@ -10,14 +10,14 @@
       <div class="form-group">
         <label for="team-selector">Team:</label>
         <select name="team-selector" v-model="currentTeam">
-          <option v-for="team in Object.keys(teams)" :value="team">{{ teams[team].team }}</option>
+          <option v-for="(team, i) in Object.keys(teams)" :value="team" :key="i">{{ teams[team].team }}</option>
         </select>
       </div>
 
       <h2>{{ teams[currentTeam].team }} {{ teams[currentTeam].nickname }}</h2>
 
       <ul class="matchups">
-        <li v-for="matchup in teamSchedule">
+        <li v-for="(matchup, i) in teamSchedule" :key="i">
           <matchup :home="matchup.home" :away="matchup.away" :date="matchup.date" :team="currentTeam"></matchup>
         </li>
       </ul>
@@ -43,7 +43,10 @@ export default {
       const teamSchedule = []
       Object.keys(this.schedule).forEach(week => {
         this.schedule[week].forEach(matchup => {
-          if (matchup.home === this.currentTeam || matchup.away === this.currentTeam) {
+          if (
+            matchup.home === this.currentTeam ||
+            matchup.away === this.currentTeam
+          ) {
             teamSchedule.push(matchup)
           }
         })
@@ -63,20 +66,19 @@ export default {
   border-top: 2px solid #013368;
 }
 
-
 .schedule-selector {
   list-style: none;
 }
 
 .schedule-selector li {
-  display: inline-block;  
+  display: inline-block;
   background-color: white;
   position: relative;
 }
 
 .schedule-selector li a {
   text-decoration: none;
-  color: #2c3e50;  
+  color: #2c3e50;
   height: 100%;
   padding: 10px;
   display: block;
@@ -95,11 +97,15 @@ export default {
   margin-bottom: 20px;
 }
 
-h2 { margin-left: 10px; }
+h2 {
+  margin-left: 10px;
+}
 
 .matchups {
-   list-style: none;
-   margin-top: 20px;
+  list-style: none;
+  margin-top: 20px;
 }
-.matchups li { border-bottom: 1px solid #013368; }
+.matchups li {
+  border-bottom: 1px solid #013368;
+}
 </style>

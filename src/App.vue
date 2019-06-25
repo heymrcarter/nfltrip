@@ -37,7 +37,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;  
+  color: #2c3e50;
 }
 
 #app::after {
@@ -68,7 +68,7 @@ header .navigation {
   margin-top: 3px;
 }
 
-header .navigation ul { 
+header .navigation ul {
   list-style: none;
 }
 
@@ -85,10 +85,10 @@ header .navigation a {
 }
 
 header .navigation a.active {
-  border-bottom: 2px solid #013368;  
+  border-bottom: 2px solid #013368;
 }
 
-main {  
+main {
   background-color: #f9f9f9;
   padding: 85px 25px 15px 25px;
   box-sizing: border-box;

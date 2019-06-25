@@ -3,7 +3,6 @@ export default function avoidChiefs (matchups) {
   matchups.forEach(matchup => {
     if (matchup.home === 'KC') {
       chiefsAtHome = true
-      return
     }
   })
 

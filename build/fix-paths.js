@@ -1,7 +1,9 @@
-var fs = require('fs')
-var config = require('../config')
+const fs = require('fs')
+const path = require('path')
 
-var index = fs.readFileSync(config.build.index, 'utf8')
-var fixedIndex = index.replace(/\/static/g, 'static')
+const buildOutput = path.join(__dirname, '..', 'dist', 'index.html')
+const index = fs.readFileSync(buildOutput, 'utf8')
+let fixedIndex = index.replace(/\/js/g, 'js')
+fixedIndex = fixedIndex.replace(/\/css/g, 'css')
 
-fs.writeFileSync(config.build.index, fixedIndex)
+fs.writeFileSync(buildOutput, fixedIndex)

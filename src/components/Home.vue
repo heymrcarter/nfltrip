@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <div></div>
+</template>
 
 <script>
 import { mapGetters } from 'vuex'
@@ -11,9 +13,9 @@ export default {
   mounted () {
     this.$nextTick(() => {
       if (this.favorites.length > 0) {
-        this.$router.push({name: 'Favorites'})
+        this.$router.push({ name: 'Favorites' })
       } else {
-        this.$router.push({name: 'WeeklySchedule'})
+        this.$router.push({ name: 'WeeklySchedule' })
       }
     })
   }

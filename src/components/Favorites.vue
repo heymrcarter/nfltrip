@@ -8,7 +8,7 @@
 
       <section>
         <ul class="matchups">
-          <li v-for="favorite in favorites">
+          <li v-for="(favorite, i) in favorites" :key="i">
             <matchup :home="favorite.home" :away="favorite.away" :date="favorite.date"></matchup>
           </li>
         </ul>
@@ -75,7 +75,7 @@ h1 {
 }
 
 h1 span {
-  flex: 1
+  flex: 1;
 }
 
 h1 a {
@@ -129,7 +129,7 @@ h1 a {
 }
 
 .dialog-content .alert {
-  background-color: #4CAE50;
+  background-color: #4cae50;
   border-radius: 4px;
   color: #fff;
   padding: 7px;
@@ -148,7 +148,7 @@ h1 a {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.87);
   text-transform: uppercase;
-  padding: 10px;    
+  padding: 10px;
 }
 
 .dialog-actions a:active {

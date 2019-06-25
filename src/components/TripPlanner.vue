@@ -6,7 +6,7 @@
       <div class="form-group">
         <label for="week-selector">Week:</label>
         <select name="week-selector" v-model="currentWeek">
-          <option v-for="week in weeks">{{ week }}</option>
+          <option v-for="(week, i) in weeks" :key="i">{{ week }}</option>
         </select>
       </div>
 
@@ -21,12 +21,12 @@
       <ul class="matchups">
         <li v-if="avoidChiefs && matchups.length === 0">Chiefs at home against {{ chiefsOpponent() }}</li>
         <li v-if="!avoidChiefs && matchups.length === 0">No matchups</li>
-        <li v-for="matchup in matchups">
+        <li v-for="(matchup, i) in matchups" :key="i">
           <matchup :home="matchup.home" :away="matchup.away" :date="matchup.date"></matchup>
         </li>
       </ul>
     </section>
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -96,13 +96,17 @@ export default {
       }
 
       if (this.filterOnCity && this.desiredCity !== undefined) {
-        matchups = matchups.filter(matchup => preferCity(matchup, this.desiredCity))
+        matchups = matchups.filter(matchup =>
+          preferCity(matchup, this.desiredCity)
+        )
       }
 
       this.matchups = matchups
     },
     chiefsOpponent () {
-      const matchup = this.schedule[this.currentWeek].find(m => m.home === 'KC')
+      const matchup = this.schedule[this.currentWeek].find(
+        m => m.home === 'KC'
+      )
       const opponent = this.teams[matchup.away].team
       return `${opponent} on ${matchup.date}`
     }
@@ -124,19 +128,19 @@ function createWeeks () {
 </script>
 
 <style scoped>
-  .form-group {
-    margin: 10px;
-  }
+.form-group {
+  margin: 10px;
+}
 
-  h2 {
-    margin: 0 10px;
-  }
+h2 {
+  margin: 0 10px;
+}
 
-  label {
-    display: block;
-  }
+label {
+  display: block;
+}
 
-  input[type="text"] {
-    padding: 5px;
-  }
+input[type="text"] {
+  padding: 5px;
+}
 </style>

@@ -4,7 +4,7 @@
 
     <section>
       <ul class="matchups">
-        <li v-for="favorite in sharedFavorites">
+        <li v-for="(favorite, i) in sharedFavorites" :key="i">
           <matchup :home="favorite.home" :away="favorite.away" :date="favorite.date"></matchup>
         </li>
       </ul>
@@ -22,9 +22,7 @@ export default {
   },
   computed: {
     sharedFavorites () {
-      console.log(this.$route.params.faveData)
       const data = atob(this.$route.params.faveData)
-      console.log(data)
       const json = JSON.parse(data)
       return json
     }

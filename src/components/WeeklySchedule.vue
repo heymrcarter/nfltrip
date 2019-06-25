@@ -10,12 +10,12 @@
       <div class="form-group">
         <label for="week-selector">Week:</label>
         <select name="week-selector" v-model="currentWeek">
-          <option v-for="week in weeks">{{ week }}</option>
+          <option v-for="(week, i) in weeks" :key="i">{{ week }}</option>
         </select>
       </div>
 
       <ul class="matchups">
-        <li v-for="matchup in schedule[currentWeek]">
+        <li v-for="(matchup, i) in schedule[currentWeek]" :key="i">
           <matchup :home="matchup.home" :away="matchup.away" :date="matchup.date"></matchup>
         </li>
       </ul>
@@ -61,20 +61,19 @@ function createWeeks () {
   border-top: 2px solid #013368;
 }
 
-
 .schedule-selector {
   list-style: none;
 }
 
 .schedule-selector li {
-  display: inline-block;  
+  display: inline-block;
   background-color: white;
   position: relative;
 }
 
 .schedule-selector li a {
   text-decoration: none;
-  color: #2c3e50;  
+  color: #2c3e50;
   height: 100%;
   padding: 10px;
   display: block;
