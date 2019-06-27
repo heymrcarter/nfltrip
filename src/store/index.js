@@ -11,418 +11,1446 @@ const store = new Store({
   state: {
     schedule: {
       1: [
-        { away: 'KC',  home: 'NE',  date: formatDate(new Date(2017, 8, 7, 20, 30))  },
-        { away: 'NYJ', home: 'BUF', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'ATL', home: 'CHI', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'BAL', home: 'CIN', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'PIT', home: 'CLE', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'ARI', home: 'DET', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'JAX', home: 'HOU', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'TB',  home: 'MIA', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'OAK', home: 'TEN', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'PHI', home: 'WAS', date: formatDate(new Date(2017, 8, 10, 13, 0))  },
-        { away: 'IND', home: 'LAR', date: formatDate(new Date(2017, 8, 10, 17, 5))  },
-        { away: 'SEA', home: 'GB',  date: formatDate(new Date(2017, 8, 10, 17, 25)) },
-        { away: 'CAR', home: 'SF',  date: formatDate(new Date(2017, 8, 11, 19, 10)) },
-        { away: 'NYG', home: 'DAL', date: formatDate(new Date(2017, 8, 11, 22, 20)) }
+        {
+          away: 'GB',
+          home: 'CHI',
+          date: formatDate(new Date(1567729200000))
+        },
+        {
+          away: 'TEN',
+          home: 'CLE',
+          date: formatDate(new Date(1567962000000))
+        },
+        {
+          away: 'BAL',
+          home: 'MIA',
+          date: formatDate(new Date(1567962000000))
+        },
+        {
+          away: 'ATL',
+          home: 'MIN',
+          date: formatDate(new Date(1567962000000))
+        },
+        {
+          away: 'BUF',
+          home: 'NYJ',
+          date: formatDate(new Date(1567962000000))
+        },
+        {
+          away: 'WSH',
+          home: 'PHI',
+          date: formatDate(new Date(1567962000000))
+        },
+        {
+          away: 'LAR',
+          home: 'CAR',
+          date: formatDate(new Date(1567962000000))
+        },
+        {
+          away: 'KC',
+          home: 'JAX',
+          date: formatDate(new Date(1567962000000))
+        },
+        {
+          away: 'IND',
+          home: 'LAC',
+          date: formatDate(new Date(1567973100000))
+        },
+        {
+          away: 'CIN',
+          home: 'SEA',
+          date: formatDate(new Date(1567973100000))
+        },
+        {
+          away: 'NYG',
+          home: 'DAL',
+          date: formatDate(new Date(1567974300000))
+        },
+        {
+          away: 'DET',
+          home: 'ARI',
+          date: formatDate(new Date(1567974300000))
+        },
+        {
+          away: 'SF',
+          home: 'TB',
+          date: formatDate(new Date(1567974300000))
+        },
+        {
+          away: 'PIT',
+          home: 'NE',
+          date: formatDate(new Date(1567988400000))
+        },
+        {
+          away: 'HOU',
+          home: 'NO',
+          date: formatDate(new Date(1568070600000))
+        },
+        {
+          away: 'DEN',
+          home: 'OAK',
+          date: formatDate(new Date(1568082000000))
+        }
       ],
       2: [
-        { away: 'CIN', home: 'HOU', date: formatDate(new Date(2017, 8, 14, 20, 25)) },
-        { away: 'BUF', home: 'CAR', date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'ARI', home: 'IND', date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'TEN', home: 'JAX', date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'PHI', home: 'KC',  date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'NE',  home: 'NO',  date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'MIN', home: 'PIT', date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'CHI', home: 'TB',  date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'MIA', home: 'LAC', date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'NYJ', home: 'OAK', date: formatDate(new Date(2017, 8, 17, 13, 0))  },
-        { away: 'DAL', home: 'DEN', date: formatDate(new Date(2017, 8, 17, 17, 25)) },
-        { away: 'WAS', home: 'LAR', date: formatDate(new Date(2017, 8, 17, 17, 25)) },
-        { away: 'SF',  home: 'SEA', date: formatDate(new Date(2017, 8, 17, 17, 25)) },
-        { away: 'GB',  home: 'ATL', date: formatDate(new Date(2017, 8, 17, 20, 30)) },
-        { away: 'DET', home: 'NYG', date: formatDate(new Date(2017, 8, 18, 20, 30)) }
+        {
+          away: 'TB',
+          home: 'CAR',
+          date: formatDate(new Date(1568334000000))
+        },
+        {
+          away: 'SF',
+          home: 'CIN',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'LAC',
+          home: 'DET',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'MIN',
+          home: 'GB',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'IND',
+          home: 'TEN',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'NE',
+          home: 'MIA',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'BUF',
+          home: 'NYG',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'SEA',
+          home: 'PIT',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'DAL',
+          home: 'WSH',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'ARI',
+          home: 'BAL',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'JAX',
+          home: 'HOU',
+          date: formatDate(new Date(1568566800000))
+        },
+        {
+          away: 'KC',
+          home: 'OAK',
+          date: formatDate(new Date(1568577900000))
+        },
+        {
+          away: 'CHI',
+          home: 'DEN',
+          date: formatDate(new Date(1568579100000))
+        },
+        {
+          away: 'NO',
+          home: 'LAR',
+          date: formatDate(new Date(1568579100000))
+        },
+        {
+          away: 'PHI',
+          home: 'ATL',
+          date: formatDate(new Date(1568593200000))
+        },
+        {
+          away: 'CLE',
+          home: 'NYJ',
+          date: formatDate(new Date(1568679300000))
+        }
       ],
       3: [
-        { away: 'LAR', home: 'SF',  date: formatDate(new Date(2017, 8, 21, 20, 25)) },
-        { away: 'BAL', home: 'JAX', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'DEN', home: 'BUF', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'NO',  home: 'CAR', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'PIT', home: 'CHI', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'ATL', home: 'DET', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'CLE', home: 'IND', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'TB',  home: 'MIN', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'HOU', home: 'NE',  date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'MIA', home: 'NYJ', date: formatDate(new Date(2017, 8, 24, 13, 0))  },
-        { away: 'NYG', home: 'PHI', date: formatDate(new Date(2017, 8, 24, 17, 5))  },
-        { away: 'SEA', home: 'TEN', date: formatDate(new Date(2017, 8, 24, 17, 25)) },
-        { away: 'CIN', home: 'GB',  date: formatDate(new Date(2017, 8, 24, 17, 25)) },
-        { away: 'KC',  home: 'LAC', date: formatDate(new Date(2017, 8, 24, 17, 25)) },
-        { away: 'OAK', home: 'WAS', date: formatDate(new Date(2017, 8, 24, 20, 30)) },
-        { away: 'DAL', home: 'ARI', date: formatDate(new Date(2017, 8, 25, 20, 30)) }
+        {
+          away: 'TEN',
+          home: 'JAX',
+          date: formatDate(new Date(1568938800000))
+        },
+        {
+          away: 'CIN',
+          home: 'BUF',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'MIA',
+          home: 'DAL',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'DEN',
+          home: 'GB',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'ATL',
+          home: 'IND',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'BAL',
+          home: 'KC',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'OAK',
+          home: 'MIN',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'NYJ',
+          home: 'NE',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'DET',
+          home: 'PHI',
+          date: formatDate(new Date(1569171600000))
+        },
+        {
+          away: 'CAR',
+          home: 'ARI',
+          date: formatDate(new Date(1569182700000))
+        },
+        {
+          away: 'NYG',
+          home: 'TB',
+          date: formatDate(new Date(1569182700000))
+        },
+        {
+          away: 'HOU',
+          home: 'LAC',
+          date: formatDate(new Date(1569183900000))
+        },
+        {
+          away: 'PIT',
+          home: 'SF',
+          date: formatDate(new Date(1569183900000))
+        },
+        {
+          away: 'NO',
+          home: 'SEA',
+          date: formatDate(new Date(1569183900000))
+        },
+        {
+          away: 'LAR',
+          home: 'CLE',
+          date: formatDate(new Date(1569198000000))
+        },
+        {
+          away: 'CHI',
+          home: 'WSH',
+          date: formatDate(new Date(1569284100000))
+        }
       ],
       4: [
-        { away: 'CHI', home: 'GB',  date: formatDate(new Date(2017, 8, 28, 20, 25)) },
-        { away: 'NO',  home: 'MIA', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'BUF', home: 'ATL', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'PIT', home: 'BAL', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'CIN', home: 'CLE', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'LAR', home: 'DAL', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'TEN', home: 'HOU', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'DET', home: 'MIN', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'CAR', home: 'NE',  date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'JAX', home: 'NYJ', date: formatDate(new Date(2017, 9, 1, 13, 0))   },
-        { away: 'SF',  home: 'ARI', date: formatDate(new Date(2017, 9, 1, 17, 5))   },
-        { away: 'PHI', home: 'LAC', date: formatDate(new Date(2017, 9, 1, 17, 25))  },
-        { away: 'NYG', home: 'TB',  date: formatDate(new Date(2017, 9, 1, 17, 25))  },
-        { away: 'OAK', home: 'DEN', date: formatDate(new Date(2017, 9, 1, 17, 25))  },
-        { away: 'IND', home: 'SEA', date: formatDate(new Date(2017, 9, 1, 20, 30))  },
-        { away: 'WAS', home: 'KC',  date: formatDate(new Date(2017, 9, 2, 20, 30))  }
+        {
+          away: 'PHI',
+          home: 'GB',
+          date: formatDate(new Date(1569543600000))
+        },
+        {
+          away: 'TEN',
+          home: 'ATL',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'NE',
+          home: 'BUF',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'KC',
+          home: 'DET',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'OAK',
+          home: 'IND',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'LAC',
+          home: 'MIA',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'WSH',
+          home: 'NYG',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'CLE',
+          home: 'BAL',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'CAR',
+          home: 'HOU',
+          date: formatDate(new Date(1569776400000))
+        },
+        {
+          away: 'TB',
+          home: 'LAR',
+          date: formatDate(new Date(1569787500000))
+        },
+        {
+          away: 'SEA',
+          home: 'ARI',
+          date: formatDate(new Date(1569787500000))
+        },
+        {
+          away: 'MIN',
+          home: 'CHI',
+          date: formatDate(new Date(1569788700000))
+        },
+        {
+          away: 'JAX',
+          home: 'DEN',
+          date: formatDate(new Date(1569788700000))
+        },
+        {
+          away: 'DAL',
+          home: 'NO',
+          date: formatDate(new Date(1569802800000))
+        },
+        {
+          away: 'CIN',
+          home: 'PIT',
+          date: formatDate(new Date(1569888900000))
+        }
       ],
       5: [
-        { away: 'NE',  home: 'TB',  date: formatDate(new Date(2017, 9, 5, 20, 25)) },
-        { away: 'BUF', home: 'CIN', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'NYJ', home: 'CLE', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'CAR', home: 'DET', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'SF',  home: 'IND', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'TEN', home: 'MIA', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'LAC', home: 'NYG', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'ARI', home: 'PHI', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'JAX', home: 'PIT', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'SEA', home: 'LAR', date: formatDate(new Date(2017, 9, 8, 13, 0))  },
-        { away: 'BAL', home: 'OAK', date: formatDate(new Date(2017, 9, 8, 17, 5))  },
-        { away: 'GB',  home: 'DAL', date: formatDate(new Date(2017, 9, 8, 17, 25)) },
-        { away: 'KC',  home: 'HOU', date: formatDate(new Date(2017, 9, 8, 17, 25)) },
-        { away: 'MIN', home: 'CHI', date: formatDate(new Date(2017, 9, 9, 20, 30)) }
+        {
+          away: 'LAR',
+          home: 'SEA',
+          date: formatDate(new Date(1570148400000))
+        },
+        {
+          away: 'ARI',
+          home: 'CIN',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'BUF',
+          home: 'TEN',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'CHI',
+          home: 'OAK',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'TB',
+          home: 'NO',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'MIN',
+          home: 'NYG',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'NYJ',
+          home: 'PHI',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'BAL',
+          home: 'PIT',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'NE',
+          home: 'WSH',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'JAX',
+          home: 'CAR',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'ATL',
+          home: 'HOU',
+          date: formatDate(new Date(1570381200000))
+        },
+        {
+          away: 'DEN',
+          home: 'LAC',
+          date: formatDate(new Date(1570392300000))
+        },
+        {
+          away: 'GB',
+          home: 'DAL',
+          date: formatDate(new Date(1570393500000))
+        },
+        {
+          away: 'IND',
+          home: 'KC',
+          date: formatDate(new Date(1570407600000))
+        },
+        {
+          away: 'CLE',
+          home: 'SF',
+          date: formatDate(new Date(1570493700000))
+        }
       ],
       6: [
-        { away: 'PHI', home: 'CAR', date: formatDate(new Date(2017, 9, 12, 20, 25)) },
-        { away: 'MIA', home: 'ATL', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'CHI', home: 'BAL', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'CLE', home: 'HOU', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'GB',  home: 'MIN', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'DET', home: 'NO',  date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'NE',  home: 'NYJ', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'SF',  home: 'WAS', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'TB',  home: 'ARI', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'LAR', home: 'JAX', date: formatDate(new Date(2017, 9, 15, 13, 0))  },
-        { away: 'PIT', home: 'KC',  date: formatDate(new Date(2017, 9, 15, 17, 5))  },
-        { away: 'LAC', home: 'OAK', date: formatDate(new Date(2017, 9, 15, 17, 25)) },
-        { away: 'NYG', home: 'DEN', date: formatDate(new Date(2017, 9, 15, 17, 25)) },
-        { away: 'IND', home: 'TEN', date: formatDate(new Date(2017, 9, 16, 20, 30)) }
+        {
+          away: 'NYG',
+          home: 'NE',
+          date: formatDate(new Date(1570753200000))
+        },
+        {
+          away: 'CAR',
+          home: 'TB',
+          date: formatDate(new Date(1571016600000))
+        },
+        {
+          away: 'SEA',
+          home: 'CLE',
+          date: formatDate(new Date(1570986000000))
+        },
+        {
+          away: 'HOU',
+          home: 'KC',
+          date: formatDate(new Date(1570986000000))
+        },
+        {
+          away: 'WSH',
+          home: 'MIA',
+          date: formatDate(new Date(1570986000000))
+        },
+        {
+          away: 'PHI',
+          home: 'MIN',
+          date: formatDate(new Date(1570986000000))
+        },
+        {
+          away: 'NO',
+          home: 'JAX',
+          date: formatDate(new Date(1570986000000))
+        },
+        {
+          away: 'CIN',
+          home: 'BAL',
+          date: formatDate(new Date(1570986000000))
+        },
+        {
+          away: 'SF',
+          home: 'LAR',
+          date: formatDate(new Date(1570997100000))
+        },
+        {
+          away: 'ATL',
+          home: 'ARI',
+          date: formatDate(new Date(1570997100000))
+        },
+        {
+          away: 'TEN',
+          home: 'DEN',
+          date: formatDate(new Date(1570998300000))
+        },
+        {
+          away: 'DAL',
+          home: 'NYJ',
+          date: formatDate(new Date(1570998300000))
+        },
+        {
+          away: 'PIT',
+          home: 'LAC',
+          date: formatDate(new Date(1571012400000))
+        },
+        {
+          away: 'DET',
+          home: 'GB',
+          date: formatDate(new Date(1571098500000))
+        }
       ],
       7: [
-        { away: 'KC',  home: 'OAK', date: formatDate(new Date(2017, 9, 19, 20, 25)) },
-        { away: 'TB',  home: 'BUF', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'CAR', home: 'CHI', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'TEN', home: 'CLE', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'NO',  home: 'GB',  date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'JAX', home: 'IND', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'ARI', home: 'LAR', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'NYJ', home: 'MIA', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'BAL', home: 'MIN', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'CIN', home: 'PIT', date: formatDate(new Date(2017, 9, 22, 13, 0))  },
-        { away: 'DAL', home: 'SF',  date: formatDate(new Date(2017, 9, 22, 17, 5))  },
-        { away: 'DEN', home: 'LAC', date: formatDate(new Date(2017, 9, 22, 17, 25)) },
-        { away: 'SEA', home: 'NYG', date: formatDate(new Date(2017, 9, 22, 17, 25)) },
-        { away: 'ATL', home: 'NE',  date: formatDate(new Date(2017, 9, 22, 17, 25)) },
-        { away: 'WAS', home: 'PHI', date: formatDate(new Date(2017, 9, 23, 20, 30)) }
+        {
+          away: 'KC',
+          home: 'DEN',
+          date: formatDate(new Date(1571358000000))
+        },
+        {
+          away: 'LAR',
+          home: 'ATL',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'MIA',
+          home: 'BUF',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'JAX',
+          home: 'CIN',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'MIN',
+          home: 'DET',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'OAK',
+          home: 'GB',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'HOU',
+          home: 'IND',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'ARI',
+          home: 'NYG',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'SF',
+          home: 'WSH',
+          date: formatDate(new Date(1571590800000))
+        },
+        {
+          away: 'LAC',
+          home: 'TEN',
+          date: formatDate(new Date(1571601900000))
+        },
+        {
+          away: 'NO',
+          home: 'CHI',
+          date: formatDate(new Date(1571603100000))
+        },
+        {
+          away: 'BAL',
+          home: 'SEA',
+          date: formatDate(new Date(1571603100000))
+        },
+        {
+          away: 'PHI',
+          home: 'DAL',
+          date: formatDate(new Date(1571617200000))
+        },
+        {
+          away: 'NE',
+          home: 'NYJ',
+          date: formatDate(new Date(1571703300000))
+        }
       ],
       8: [
-        { away: 'MIA', home: 'BAL', date: formatDate(new Date(2017, 9, 26, 20, 25)) },
-        { away: 'MIN', home: 'CLE', date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'OAK', home: 'BUF', date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'IND', home: 'CIN', date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'LAC', home: 'NE',  date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'CHI', home: 'NO',  date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'ATL', home: 'NYJ', date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'SF',  home: 'PHI', date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'CAR', home: 'TB',  date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'HOU', home: 'SEA', date: formatDate(new Date(2017, 9, 29, 13, 0))  },
-        { away: 'DAL', home: 'WAS', date: formatDate(new Date(2017, 9, 29, 17, 5))  },
-        { away: 'PIT', home: 'DET', date: formatDate(new Date(2017, 9, 29, 17, 25)) },
-        { away: 'DEN', home: 'KC',  date: formatDate(new Date(2017, 9, 30, 20, 30)) }
+        {
+          away: 'WSH',
+          home: 'MIN',
+          date: formatDate(new Date(1571962800000))
+        },
+        {
+          away: 'SEA',
+          home: 'ATL',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'PHI',
+          home: 'BUF',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'LAC',
+          home: 'CHI',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'NYG',
+          home: 'DET',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'TB',
+          home: 'TEN',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'CIN',
+          home: 'LAR',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'ARI',
+          home: 'NO',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'NYJ',
+          home: 'JAX',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'OAK',
+          home: 'HOU',
+          date: formatDate(new Date(1572195600000))
+        },
+        {
+          away: 'CAR',
+          home: 'SF',
+          date: formatDate(new Date(1572206700000))
+        },
+        {
+          away: 'DEN',
+          home: 'IND',
+          date: formatDate(new Date(1572207900000))
+        },
+        {
+          away: 'CLE',
+          home: 'NE',
+          date: formatDate(new Date(1572207900000))
+        },
+        {
+          away: 'GB',
+          home: 'KC',
+          date: formatDate(new Date(1572222000000))
+        },
+        {
+          away: 'MIA',
+          home: 'PIT',
+          date: formatDate(new Date(1572308100000))
+        }
       ],
       9: [
-        { away: 'BUF', home: 'NYJ', date: formatDate(new Date(2017, 10, 2, 20, 25)) },
-        { away: 'ATL', home: 'CAR', date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'IND', home: 'HOU', date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'CIN', home: 'JAX', date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'TB',  home: 'NO',  date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'LAR', home: 'NYG', date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'DEN', home: 'PHI', date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'BAL', home: 'TEN', date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'ARI', home: 'SF',  date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'WAS', home: 'SEA', date: formatDate(new Date(2017, 10, 5, 13, 0))  },
-        { away: 'KC',  home: 'DAL', date: formatDate(new Date(2017, 10, 5, 17, 5))  },
-        { away: 'OAK', home: 'MIA', date: formatDate(new Date(2017, 10, 5, 17, 25)) },
-        { away: 'DET', home: 'GB',  date: formatDate(new Date(2017, 10, 6, 20, 30)) }
+        {
+          away: 'SF',
+          home: 'ARI',
+          date: formatDate(new Date(1572567600000))
+        },
+        {
+          away: 'HOU',
+          home: 'JAX',
+          date: formatDate(new Date(1572834600000))
+        },
+        {
+          away: 'WSH',
+          home: 'BUF',
+          date: formatDate(new Date(1572804000000))
+        },
+        {
+          away: 'MIN',
+          home: 'KC',
+          date: formatDate(new Date(1572804000000))
+        },
+        {
+          away: 'NYJ',
+          home: 'MIA',
+          date: formatDate(new Date(1572804000000))
+        },
+        {
+          away: 'CHI',
+          home: 'PHI',
+          date: formatDate(new Date(1572804000000))
+        },
+        {
+          away: 'IND',
+          home: 'PIT',
+          date: formatDate(new Date(1572804000000))
+        },
+        {
+          away: 'TEN',
+          home: 'CAR',
+          date: formatDate(new Date(1572804000000))
+        },
+        {
+          away: 'DET',
+          home: 'OAK',
+          date: formatDate(new Date(1572815100000))
+        },
+        {
+          away: 'TB',
+          home: 'SEA',
+          date: formatDate(new Date(1572815100000))
+        },
+        {
+          away: 'CLE',
+          home: 'DEN',
+          date: formatDate(new Date(1572816300000))
+        },
+        {
+          away: 'GB',
+          home: 'LAC',
+          date: formatDate(new Date(1572816300000))
+        },
+        {
+          away: 'NE',
+          home: 'BAL',
+          date: formatDate(new Date(1572830400000))
+        },
+        {
+          away: 'DAL',
+          home: 'NYG',
+          date: formatDate(new Date(1572916500000))
+        }
       ],
       10: [
-        { away: 'SEA', home: 'ARI', date: formatDate(new Date(2017, 10, 9, 20, 25))  },
-        { away: 'NO',  home: 'BUF', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'GB',  home: 'CHI', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'CLE', home: 'DET', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'PIT', home: 'IND', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'LAC', home: 'JAX', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'NYJ', home: 'TB',  date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'CIN', home: 'TEN', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'MIN', home: 'WAS', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'HOU', home: 'LAR', date: formatDate(new Date(2017, 10, 12, 13, 0))  },
-        { away: 'DAL', home: 'ATL', date: formatDate(new Date(2017, 10, 12, 17, 5))  },
-        { away: 'NYG', home: 'SF',  date: formatDate(new Date(2017, 10, 12, 17, 25)) },
-        { away: 'NE',  home: 'DEN', date: formatDate(new Date(2017, 10, 12, 20, 30)) },
-        { away: 'MIA', home: 'CAR', date: formatDate(new Date(2017, 10, 13, 20, 30)) }
+        {
+          away: 'LAC',
+          home: 'OAK',
+          date: formatDate(new Date(1573176000000))
+        },
+        {
+          away: 'DET',
+          home: 'CHI',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'BAL',
+          home: 'CIN',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'BUF',
+          home: 'CLE',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'CAR',
+          home: 'GB',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'KC',
+          home: 'TEN',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'ATL',
+          home: 'NO',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'NYG',
+          home: 'NYJ',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'ARI',
+          home: 'TB',
+          date: formatDate(new Date(1573408800000))
+        },
+        {
+          away: 'MIA',
+          home: 'IND',
+          date: formatDate(new Date(1573419900000))
+        },
+        {
+          away: 'LAR',
+          home: 'PIT',
+          date: formatDate(new Date(1573421100000))
+        },
+        {
+          away: 'MIN',
+          home: 'DAL',
+          date: formatDate(new Date(1573435200000))
+        },
+        {
+          away: 'SEA',
+          home: 'SF',
+          date: formatDate(new Date(1573521300000))
+        }
       ],
       11: [
-        { away: 'TEN', home: 'PIT', date: formatDate(new Date(2017, 10, 16, 20, 25)) },
-        { away: 'DET', home: 'CHI', date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'BAL', home: 'GB',  date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'JAX', home: 'CLE', date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'ARI', home: 'HOU', date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'LAR', home: 'MIN', date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'WAS', home: 'NO',  date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'KC',  home: 'NYG', date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'BUF', home: 'LAC', date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'CIN', home: 'DEN', date: formatDate(new Date(2017, 10, 19, 13, 0))  },
-        { away: 'NE',  home: 'OAK', date: formatDate(new Date(2017, 10, 19, 17, 5))  },
-        { away: 'PHI', home: 'DAL', date: formatDate(new Date(2017, 10, 19, 17, 25)) },
-        { away: 'ATL', home: 'SEA', date: formatDate(new Date(2017, 10, 20, 20, 30)) }
+        {
+          away: 'PIT',
+          home: 'CLE',
+          date: formatDate(new Date(1573780800000))
+        },
+        {
+          away: 'DAL',
+          home: 'DET',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'JAX',
+          home: 'IND',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'BUF',
+          home: 'MIA',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'DEN',
+          home: 'MIN',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'NO',
+          home: 'TB',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'NYJ',
+          home: 'WSH',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'ATL',
+          home: 'CAR',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'HOU',
+          home: 'BAL',
+          date: formatDate(new Date(1574013600000))
+        },
+        {
+          away: 'ARI',
+          home: 'SF',
+          date: formatDate(new Date(1574024700000))
+        },
+        {
+          away: 'CIN',
+          home: 'OAK',
+          date: formatDate(new Date(1574025900000))
+        },
+        {
+          away: 'NE',
+          home: 'PHI',
+          date: formatDate(new Date(1574025900000))
+        },
+        {
+          away: 'CHI',
+          home: 'LAR',
+          date: formatDate(new Date(1574040000000))
+        },
+        {
+          away: 'KC',
+          home: 'LAC',
+          date: formatDate(new Date(1574126100000))
+        }
       ],
       12: [
-        { away: 'MIN', home: 'DET', date: formatDate(new Date(2017, 10, 23, 12, 30)) },
-        { away: 'LAC', home: 'DAL', date: formatDate(new Date(2017, 10, 23, 16, 30)) },
-        { away: 'NYG', home: 'WAS', date: formatDate(new Date(2017, 10, 23, 20, 30)) },
-        { away: 'TB',  home: 'ATL', date: formatDate(new Date(2017, 10, 26, 13, 0))  },
-        { away: 'CLE', home: 'CIN', date: formatDate(new Date(2017, 10, 26, 13, 0))  },
-        { away: 'TEN', home: 'IND', date: formatDate(new Date(2017, 10, 26, 13, 0))  },
-        { away: 'BUF', home: 'KC',  date: formatDate(new Date(2017, 10, 26, 13, 0))  },
-        { away: 'MIA', home: 'NE',  date: formatDate(new Date(2017, 10, 26, 13, 0))  },
-        { away: 'CAR', home: 'NYJ', date: formatDate(new Date(2017, 10, 26, 13, 0))  },
-        { away: 'CHI', home: 'PHI', date: formatDate(new Date(2017, 10, 26, 13, 0))  },
-        { away: 'NO',  home: 'LAR', date: formatDate(new Date(2017, 10, 26, 17, 5))  },
-        { away: 'SEA', home: 'SF',  date: formatDate(new Date(2017, 10, 26, 17, 5))  },
-        { away: 'JAX', home: 'ARI', date: formatDate(new Date(2017, 10, 26, 17, 25)) },
-        { away: 'DEN', home: 'OAK', date: formatDate(new Date(2017, 10, 26, 17, 25)) },
-        { away: 'GB',  home: 'PIT', date: formatDate(new Date(2017, 10, 26, 20, 30)) },
-        { away: 'HOU', home: 'BAL', date: formatDate(new Date(2017, 10, 27, 20, 30)) }
+        {
+          away: 'IND',
+          home: 'HOU',
+          date: formatDate(new Date(1574385600000))
+        },
+        {
+          away: 'TB',
+          home: 'ATL',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'DEN',
+          home: 'BUF',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'NYG',
+          home: 'CHI',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'PIT',
+          home: 'CIN',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'MIA',
+          home: 'CLE',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'CAR',
+          home: 'NO',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'OAK',
+          home: 'NYJ',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'DET',
+          home: 'WSH',
+          date: formatDate(new Date(1574618400000))
+        },
+        {
+          away: 'JAX',
+          home: 'TEN',
+          date: formatDate(new Date(1574629500000))
+        },
+        {
+          away: 'DAL',
+          home: 'NE',
+          date: formatDate(new Date(1574630700000))
+        },
+        {
+          away: 'GB',
+          home: 'SF',
+          date: formatDate(new Date(1574630700000))
+        },
+        {
+          away: 'SEA',
+          home: 'PHI',
+          date: formatDate(new Date(1574644800000))
+        },
+        {
+          away: 'BAL',
+          home: 'LAR',
+          date: formatDate(new Date(1574730900000))
+        }
       ],
       13: [
-        { away: 'WAS', home: 'DAL', date: formatDate(new Date(2017, 10, 30, 12, 30)) },
-        { away: 'MIN', home: 'ATL', date: formatDate(new Date(2017, 11, 3, 16, 30))  },
-        { away: 'DET', home: 'BAL', date: formatDate(new Date(2017, 11, 3, 20, 30))  },
-        { away: 'NE',  home: 'BUF', date: formatDate(new Date(2017, 11, 3, 13, 0))   },
-        { away: 'SF',  home: 'GB',  date: formatDate(new Date(2017, 11, 3, 13, 0))   },
-        { away: 'IND', home: 'JAX', date: formatDate(new Date(2017, 11, 3, 13, 0))   },
-        { away: 'DEN', home: 'MIA', date: formatDate(new Date(2017, 11, 3, 13, 0))   },
-        { away: 'CAR', home: 'NO',  date: formatDate(new Date(2017, 11, 3, 13, 0))   },
-        { away: 'KC',  home: 'NYJ', date: formatDate(new Date(2017, 11, 3, 13, 0))   },
-        { away: 'HOU', home: 'TEN', date: formatDate(new Date(2017, 11, 3, 13, 0))   },
-        { away: 'CLE', home: 'LAC', date: formatDate(new Date(2017, 11, 3, 17, 5))   },
-        { away: 'LAR', home: 'ARI', date: formatDate(new Date(2017, 11, 3, 17, 25))  },
-        { away: 'NYG', home: 'OAK', date: formatDate(new Date(2017, 11, 3, 17, 25))  },
-        { away: 'PHI', home: 'SEA', date: formatDate(new Date(2017, 11, 3, 20, 30))  },
-        { away: 'PIT', home: 'CIN', date: formatDate(new Date(2017, 11, 4, 20, 30))  }
+        {
+          away: 'CHI',
+          home: 'DET',
+          date: formatDate(new Date(1574962200000))
+        },
+        {
+          away: 'BUF',
+          home: 'DAL',
+          date: formatDate(new Date(1574976600000))
+        },
+        {
+          away: 'NO',
+          home: 'ATL',
+          date: formatDate(new Date(1574990400000))
+        },
+        {
+          away: 'NYJ',
+          home: 'CIN',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'TEN',
+          home: 'IND',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'OAK',
+          home: 'KC',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'PHI',
+          home: 'MIA',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'GB',
+          home: 'NYG',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'WSH',
+          home: 'CAR',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'TB',
+          home: 'JAX',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'SF',
+          home: 'BAL',
+          date: formatDate(new Date(1575223200000))
+        },
+        {
+          away: 'LAR',
+          home: 'ARI',
+          date: formatDate(new Date(1575234300000))
+        },
+        {
+          away: 'LAC',
+          home: 'DEN',
+          date: formatDate(new Date(1575235500000))
+        },
+        {
+          away: 'CLE',
+          home: 'PIT',
+          date: formatDate(new Date(1575235500000))
+        },
+        {
+          away: 'NE',
+          home: 'HOU',
+          date: formatDate(new Date(1575249600000))
+        },
+        {
+          away: 'MIN',
+          home: 'SEA',
+          date: formatDate(new Date(1575335700000))
+        }
       ],
       14: [
-        { away: 'NO',  home: 'ATL', date: formatDate(new Date(2017, 11, 7,  12, 30))  },
-        { away: 'IND', home: 'BUF', date: formatDate(new Date(2017, 11, 10, 16, 30)) },
-        { away: 'MIN', home: 'CAR', date: formatDate(new Date(2017, 11, 10, 20, 30)) },
-        { away: 'CHI', home: 'CIN', date: formatDate(new Date(2017, 11, 10, 13, 0))  },
-        { away: 'GB',  home: 'CLE', date: formatDate(new Date(2017, 11, 10, 13, 0))  },
-        { away: 'SF',  home: 'HOU', date: formatDate(new Date(2017, 11, 10, 13, 0))  },
-        { away: 'SEA', home: 'JAX', date: formatDate(new Date(2017, 11, 10, 13, 0))  },
-        { away: 'OAK', home: 'KC',  date: formatDate(new Date(2017, 11, 10, 13, 0))  },
-        { away: 'DET', home: 'TB',  date: formatDate(new Date(2017, 11, 10, 13, 0))  },
-        { away: 'TEN', home: 'ARI', date: formatDate(new Date(2017, 11, 10, 13, 0))  },
-        { away: 'NYJ', home: 'DEN', date: formatDate(new Date(2017, 11, 10, 17, 5))  },
-        { away: 'WAS', home: 'LAC', date: formatDate(new Date(2017, 11, 10, 17, 25)) },
-        { away: 'PHI', home: 'LAR', date: formatDate(new Date(2017, 11, 10, 17, 25)) },
-        { away: 'DAL', home: 'NYG', date: formatDate(new Date(2017, 11, 10, 17, 25)) },
-        { away: 'BAL', home: 'PIT', date: formatDate(new Date(2017, 11, 10, 20, 30)) },
-        { away: 'NE',  home: 'MIA', date: formatDate(new Date(2017, 11, 11, 20, 30)) }
+        {
+          away: 'DAL',
+          home: 'CHI',
+          date: formatDate(new Date(1575595200000))
+        },
+        {
+          away: 'CAR',
+          home: 'ATL',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'BAL',
+          home: 'BUF',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'CIN',
+          home: 'CLE',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'WSH',
+          home: 'GB',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'DET',
+          home: 'MIN',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'SF',
+          home: 'NO',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'MIA',
+          home: 'NYJ',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'IND',
+          home: 'TB',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'DEN',
+          home: 'HOU',
+          date: formatDate(new Date(1575828000000))
+        },
+        {
+          away: 'LAC',
+          home: 'JAX',
+          date: formatDate(new Date(1575839100000))
+        },
+        {
+          away: 'TEN',
+          home: 'OAK',
+          date: formatDate(new Date(1575840300000))
+        },
+        {
+          away: 'KC',
+          home: 'NE',
+          date: formatDate(new Date(1575840300000))
+        },
+        {
+          away: 'PIT',
+          home: 'ARI',
+          date: formatDate(new Date(1575840300000))
+        },
+        {
+          away: 'SEA',
+          home: 'LAR',
+          date: formatDate(new Date(1575854400000))
+        },
+        {
+          away: 'NYG',
+          home: 'PHI',
+          date: formatDate(new Date(1575940500000))
+        }
       ],
       15: [
-        { away: 'DEN', home: 'IND', date: formatDate(new Date(2017, 11, 14, 20, 25)) },
-        { away: 'CHI', home: 'DET', date: formatDate(new Date(2017, 11, 16, 16, 30)) },
-        { away: 'LAC', home: 'KC',  date: formatDate(new Date(2017, 11, 16, 20, 25)) },
-        { away: 'MIA', home: 'BUF', date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'GB',  home: 'CAR', date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'BAL', home: 'CLE', date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'HOU', home: 'JAX', date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'CIN', home: 'MIN', date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'NYJ', home: 'NO',  date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'PHI', home: 'NYG', date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'ARI', home: 'WAS', date: formatDate(new Date(2017, 11, 17, 13, 0))  },
-        { away: 'LAR', home: 'SEA', date: formatDate(new Date(2017, 11, 17, 17, 5))  },
-        { away: 'NE',  home: 'PIT', date: formatDate(new Date(2017, 11, 17, 17, 25)) },
-        { away: 'TEN', home: 'SF',  date: formatDate(new Date(2017, 11, 17, 17, 25)) },
-        { away: 'DAL', home: 'OAK', date: formatDate(new Date(2017, 11, 17, 20, 30)) },
-        { away: 'ATL', home: 'TB',  date: formatDate(new Date(2017, 11, 18, 20, 30)) }
+        {
+          away: 'NYJ',
+          home: 'BAL',
+          date: formatDate(new Date(1576200000000))
+        },
+        {
+          away: 'NE',
+          home: 'CIN',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'TB',
+          home: 'DET',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'CHI',
+          home: 'GB',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'HOU',
+          home: 'TEN',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'DEN',
+          home: 'KC',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'MIA',
+          home: 'NYG',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'BUF',
+          home: 'PIT',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'PHI',
+          home: 'WSH',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'SEA',
+          home: 'CAR',
+          date: formatDate(new Date(1576432800000))
+        },
+        {
+          away: 'JAX',
+          home: 'OAK',
+          date: formatDate(new Date(1576443900000))
+        },
+        {
+          away: 'CLE',
+          home: 'ARI',
+          date: formatDate(new Date(1576443900000))
+        },
+        {
+          away: 'LAR',
+          home: 'DAL',
+          date: formatDate(new Date(1576445100000))
+        },
+        {
+          away: 'ATL',
+          home: 'SF',
+          date: formatDate(new Date(1576445100000))
+        },
+        {
+          away: 'MIN',
+          home: 'LAC',
+          date: formatDate(new Date(1576459200000))
+        },
+        {
+          away: 'IND',
+          home: 'NO',
+          date: formatDate(new Date(1576545300000))
+        }
       ],
       16: [
-        { away: 'IND', home: 'BAL', date: formatDate(new Date(2017, 11, 23, 16, 30)) },
-        { away: 'MIN', home: 'GB',  date: formatDate(new Date(2017, 11, 23, 20, 30)) },
-        { away: 'TB',  home: 'CAR', date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'CLE', home: 'CHI', date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'DET', home: 'CIN', date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'MIA', home: 'KC',  date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'BUF', home: 'NE',  date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'ATL', home: 'NO',  date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'LAC', home: 'NYJ', date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'LAR', home: 'TEN', date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'DEN', home: 'WAS', date: formatDate(new Date(2017, 11, 24, 13, 0))  },
-        { away: 'JAX', home: 'SF',  date: formatDate(new Date(2017, 11, 24, 14, 5))  },
-        { away: 'NYG', home: 'ARI', date: formatDate(new Date(2017, 11, 24, 16, 25)) },
-        { away: 'SEA', home: 'DAL', date: formatDate(new Date(2017, 11, 24, 16, 25)) },
-        { away: 'PIT', home: 'HOU', date: formatDate(new Date(2017, 11, 25, 16, 30)) },
-        { away: 'OAK', home: 'PHI', date: formatDate(new Date(2017, 11, 25, 20, 30)) }
+        {
+          away: 'DET',
+          home: 'DEN',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'BUF',
+          home: 'NE',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'OAK',
+          home: 'LAC',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'LAR',
+          home: 'SF',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'HOU',
+          home: 'TB',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'JAX',
+          home: 'ATL',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'BAL',
+          home: 'CLE',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'NO',
+          home: 'TEN',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'CAR',
+          home: 'IND',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'CIN',
+          home: 'MIA',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'PIT',
+          home: 'NYJ',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'NYG',
+          home: 'WSH',
+          date: formatDate(new Date(1577037600000))
+        },
+        {
+          away: 'DAL',
+          home: 'PHI',
+          date: formatDate(new Date(1577049900000))
+        },
+        {
+          away: 'ARI',
+          home: 'SEA',
+          date: formatDate(new Date(1577049900000))
+        },
+        {
+          away: 'KC',
+          home: 'CHI',
+          date: formatDate(new Date(1577064000000))
+        },
+        {
+          away: 'GB',
+          home: 'MIN',
+          date: formatDate(new Date(1577150100000))
+        }
       ],
       17: [
-        { away: 'CAR', home: 'ATL', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'CIN', home: 'BAL', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'GB',  home: 'DET', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'HOU', home: 'IND', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'BUF', home: 'MIA', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'CHI', home: 'MIN', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'NYJ', home: 'NE',  date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'WAS', home: 'NYG', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'DAL', home: 'PHI', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'CLE', home: 'PIT', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'NO',  home: 'TB',  date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'JAX', home: 'TEN', date: formatDate(new Date(2017, 11, 31, 13, 0))  },
-        { away: 'KC',  home: 'DEN', date: formatDate(new Date(2017, 11, 31, 16, 25)) },
-        { away: 'OAK', home: 'LAC', date: formatDate(new Date(2017, 11, 31, 16, 25)) },
-        { away: 'SF',  home: 'LAR', date: formatDate(new Date(2017, 11, 31, 16, 25)) },
-        { away: 'ARI', home: 'SEA', date: formatDate(new Date(2017, 11, 31, 16, 25)) }
+        {
+          away: 'NYJ',
+          home: 'BUF',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'CLE',
+          home: 'CIN',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'WSH',
+          home: 'DAL',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'GB',
+          home: 'DET',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'LAC',
+          home: 'KC',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'CHI',
+          home: 'MIN',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'MIA',
+          home: 'NE',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'PHI',
+          home: 'NYG',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'ATL',
+          home: 'TB',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'NO',
+          home: 'CAR',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'IND',
+          home: 'JAX',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'PIT',
+          home: 'BAL',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'TEN',
+          home: 'HOU',
+          date: formatDate(new Date(1577642400000))
+        },
+        {
+          away: 'OAK',
+          home: 'DEN',
+          date: formatDate(new Date(1577654700000))
+        },
+        {
+          away: 'ARI',
+          home: 'LAR',
+          date: formatDate(new Date(1577654700000))
+        },
+        {
+          away: 'SF',
+          home: 'SEA',
+          date: formatDate(new Date(1577654700000))
+        }
       ]
     },
     teams: {
-      'ARI': {
+      ARI: {
         team: 'Arizona',
         nickname: 'Cardinals'
       },
-      'ATL': {
+      ATL: {
         team: 'Atlanta',
         nickname: 'Falcons'
       },
-      'BAL': {
+      BAL: {
         team: 'Baltimore',
         nickname: 'Ravens'
       },
-      'BUF': {
+      BUF: {
         team: 'Buffalo',
         nickname: 'Bills'
       },
-      'CAR': {
+      CAR: {
         team: 'Carolina',
         nickname: 'Panthers'
       },
-      'CHI': {
+      CHI: {
         team: 'Chicago',
         nickname: 'Bears'
       },
-      'CIN': {
+      CIN: {
         team: 'Cincinnati',
         nickname: 'Bengals'
       },
-      'CLE': {
+      CLE: {
         team: 'Cleveland',
         nickname: 'Browns'
       },
-      'DAL': {
+      DAL: {
         team: 'Dallas',
         nickname: 'Cowboys'
       },
-      'DEN': {
+      DEN: {
         team: 'Denver',
         nickname: 'Broncos'
       },
-      'DET': {
+      DET: {
         team: 'Detroit',
         nickname: 'Lions'
       },
-      'GB': {
+      GB: {
         team: 'Green Bay',
         nickname: 'Packers'
       },
-      'HOU': {
+      HOU: {
         team: 'Houston',
         nickname: 'Texans'
       },
-      'IND': {
+      IND: {
         team: 'Indianapolis',
         nickname: 'Colts'
       },
-      'JAX': {
+      JAX: {
         team: 'Jacksonville',
         nickname: 'Jaguars'
       },
-      'KC': {
+      KC: {
         team: 'Kansas City',
         nickname: 'Chiefs'
       },
-      'LAC': {
+      LAC: {
         team: 'Los Angeles',
         nickname: 'Chargers'
       },
-      'LAR': {
+      LAR: {
         team: 'Los Angeles',
         nickname: 'Rams'
       },
-      'MIA': {
+      MIA: {
         team: 'Miami',
         nickname: 'Dolphins'
       },
-      'MIN': {
+      MIN: {
         team: 'Minnesota',
         nickname: 'Vikings'
       },
-      'NE': {
+      NE: {
         team: 'New England',
         nickname: 'Patriots'
       },
-      'NO': {
+      NO: {
         team: 'New Orleans',
         nickname: 'Saints'
       },
-      'NYG': {
+      NYG: {
         team: 'New York',
         nickname: 'Giants'
       },
-      'NYJ': {
+      NYJ: {
         team: 'New York',
         nickname: 'Jets'
       },
-      'OAK': {
+      OAK: {
         team: 'Oakland',
         nickname: 'Raiders'
       },
-      'PHI': {
+      PHI: {
         team: 'Philadelphia',
         nickname: 'Eagles'
       },
-      'PIT': {
+      PIT: {
         team: 'Pittsburgh',
         nickname: 'Steelers'
       },
-      'SF': {
+      SF: {
         team: 'San Francisco',
         nickname: '49ers'
       },
-      'SEA': {
+      SEA: {
         team: 'Seattle',
         nickname: 'Seahawks'
       },
-      'TB': {
+      TB: {
         team: 'Tampa Bay',
         nickname: 'Buccaneers'
       },
-      'TEN': {
+      TEN: {
         team: 'Tennessee',
         nickname: 'Titans'
       },
-      'WAS': {
+      WSH: {
         team: 'Washington',
         nickname: 'Redskins'
       }
@@ -476,7 +1504,12 @@ const store = new Store({
 })
 
 function formatDate (date) {
-  return fecha.format(date, 'dddd, MMMM Do YYYY, h:mm a')
+  try {
+    return fecha.format(date, 'dddd, MMMM Do YYYY, h:mm a')
+  } catch (e) {
+    console.error(e)
+    console.log(date)
+  }
 }
 
 export default store

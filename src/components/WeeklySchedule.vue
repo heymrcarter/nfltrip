@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <h1>2017 NFL schedule</h1>
+    <h1>2019 NFL schedule</h1>
     <ul class="schedule-selector">
       <li><router-link to="/schedule/by-week">By week</router-link></li>
       <li><router-link to="/schedule/by-team">By team</router-link></li>
